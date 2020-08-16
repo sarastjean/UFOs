@@ -36,15 +36,23 @@ function handleClick() {
    
   if (date) {
     filteredData = filteredData.filter(row => row.datetime === date);
-     } else if (city) {
+  };
+
+  if (city) {
     filteredData = filteredData.filter(row => row.city === city);
-     } else if (state) {
+  };
+
+  if (state) {
     filteredData = filteredData.filter(row => row.state === state);
-     } else if (country) {
+  };
+  
+  if (country) {
     filteredData = filteredData.filter(row => row.country === country);
-     } else if (shape) {
+  };
+  
+  if (shape) {
     filteredData = filteredData.filter(row => row.shape === shape);
-     };
+  };
   
      buildTable(filteredData);
   };
